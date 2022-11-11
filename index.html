@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="funcoes.js"></script>
+    </head>
+
+    <body>
+        <h1>Player Maker</h1>
+        <h3>Preencha as informações para criar um jogador de futebol (real ou fictício) da sua escolha.</h3>
+
+        <form>
+            <input id="idNome" type="text" placeholder="Nome" autocomplete="off" required>
+            <input id="idPais" type="text" placeholder="País (em inglês)" autocomplete="off">
+            <input id="idNotaGeral" type="text" placeholder="Nota Geral" autocomplete="off">
+            <input id="idTime" type="text" placeholder="Time" autocomplete="off">
+            <input id="idSalario" type="number" placeholder="Salário" autocomplete="off">
+            <input type="submit" id="botaoCriar" value="Criar"><span name="primeiro" class="sucesso">Criado com sucesso.</span>
+            <br>
+            <p>Pesquisa um jogador pelo nome: <input id="mostrarNome" type="text" placeholder="Tem que ser exato.">
+            <input type="submit" id="botaoPesquisar" value="Pesquise">
+            <p id="resultadoDeBusca"></p>
+
+            <p>Encontre todas as informações sobre o jogador: <input id="idID" type="text" placeholder="Insira o ID"><input id="botaoInformacoes" type="submit" value="Pesquise"></p>
+            <p id="resultadoInformacoes"></p>
+        </form>
+        
+
+        <p>Delete um jogador. <input id="idDeletar" type="text" placeholder="Insira o ID" autocomplete="off"><input type="submit" id="botaoDeletar" value="Delete"><span name="primeiro" class="deletado">Deletado com sucesso.</span></p>
+        <h4>Preencha as informações sobre um time de futebol. (Opcional)</h4>
+
+        <form>
+            <input id="idTimeNome" type="text" placeholder="Nome" autocomplete="off" required>
+            <input id="idTimePais" type="text" placeholder="País (em inglês)" autocomplete="off">
+            <input id="idTimeLiga" type="text" placeholder="Liga/Série" autocomplete="off">
+            <input type="submit" id="botaoTimeCriar" value="Criar"><span name="segundo" class="sucesso">Criado com sucesso.</span>
+        </form>
+        
+
+        <p>Delete um time. <input id="idTimeDeletar" type="text" placeholder="Insira o nome do time" autocomplete="off"><input type="submit" id="botaoTimeDeletar" value="Delete"><span name="segundo" class="deletado">Deletado com sucesso.</span></p>
+
+        <p>Encontre os jogadores que atuam pelo(a): <input id="TimeNome" type="text" placeholder="Nome do time"><input type="submit" id="botaoTimePesquisar" value="Pesquise"></p>
+        <p id="resultadoTimes"></p>
+    </body>
+
+</html>
